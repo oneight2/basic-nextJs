@@ -1,0 +1,39 @@
+
+.container-satu{
+    background-color: white;
+    display: flex;
+    padding: 20px 20px;
+    box-sizing: border-box;
+    margin: 3% 3%;;
+
+}
+.kolom-utama{
+    flex:3;
+    order: 2;
+    padding: 0 2%;
+
+}
+.sidebar-satu{
+    flex:1;
+    order: 1;
+}
+.sidebar-dua{
+    flex:1;
+    order: 3;
+
+}
+
+.container-dua{
+    max-width: 800px;
+    display: flex;
+    margin: 20px auto
+}
+.satu{
+    background-color: lightpink;
+}
+.layanan.dua{
+    background-color: lightseagreen;
+}
+.layanan.tiga{
+    background-color: limegreen;
+}
