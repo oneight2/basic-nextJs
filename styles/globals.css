@@ -15,3 +15,20 @@ a {
 * {
   box-sizing: border-box;
 }
+.flex{
+  display: flex;
+  flex-wrap: wrap;
+  margin: 20px;
+}
+.card{
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: lightsteelblue 2px 5px 10px;
+  padding: 0 5px;
+  box-sizing: border-box;
+  margin: 3px;
+  cursor:pointer;
+}
+.card:hover{
+  background-color: rgba(176, 196, 222, 0.288);
+}

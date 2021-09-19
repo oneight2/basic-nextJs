@@ -1,6 +1,6 @@
 import Link from "next/link"
-import { Fragment } from "react"
 import styles from "./flexbox.module.css"
+import Image from "next/image"
 export default function Flexbox() {
     return (
         <>
@@ -28,17 +28,66 @@ export default function Flexbox() {
             </div>
             {/* LATIHAN 2 */}
             <div className={styles['container-dua']}>
-                <div className={[styles.layanan, styles.satu].join('')}>
+                <div className={styles.satu}>
                     <h4>Layanan 1</h4>
                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Temporibus, excepturi?</p>
                 </div>
-                <div className={[styles.layanan, styles.dua].join('')}>
+                <div className={styles.dua}>
                     <h4>Layanan 2</h4>
                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt, voluptas.</p>
                 </div>
-                <div className={[styles.layanan, styles.tiga].join('')}>
+                <div className={styles.tiga}>
                     <h4>Layanan 3</h4>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, aspernatur.</p>
+                </div>
+
+            </div>
+            {/* LATIHAN 3 */}
+            <div className={styles['container-tiga']}>
+                <div className={styles.card}>
+                    <div className={styles.header}></div>
+                    <div className={styles.body}>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quis, delectus.</p>
+                        <button>Button</button>
+                    </div>
+                </div>
+                <div className={styles.card}>
+                    <div className={styles.header}></div>
+                    <div className={styles.body}>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quis, delectus.</p>
+                        <button>Button</button>
+                    </div>
+                </div>
+                <div className={styles.card}>
+                    <div className={styles.header}></div>
+                    <div className={styles.body}>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quis, delectus.</p>
+                        <button>Button</button>
+                    </div>
+                </div>
+            </div>
+            {/* latihan 4 */}
+            <div className={styles['container-empat']}>
+                <div className={styles.thumbnail}>
+                    <Image src="/pc.jpg" width={200} height={200} />
+                </div>
+                <div className={styles.thumbnail}>
+                    <Image src="/pc.jpg" width={200} height={200} />
+                </div>
+                <div className={styles.thumbnail}>
+                    <Image src="/pc.jpg" width={200} height={200} />
+                </div>
+                <div className={styles.thumbnail}>
+                    <Image src="/pc.jpg" width={200} height={200} />
+                </div>
+                <div className={styles.thumbnail}>
+                    <Image src="/pc.jpg" width={200} height={200} />
+                </div>
+                <div className={styles.thumbnail}>
+                    <Image src="/pc.jpg" width={200} height={200} />
+                </div>
+                <div className={styles.thumbnail}>
+                    <Image src="/pc.jpg" width={200} height={200} />
                 </div>
 
             </div>

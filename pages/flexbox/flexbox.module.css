@@ -25,15 +25,71 @@
 
 .container-dua{
     max-width: 800px;
-    display: flex;
-    margin: 20px auto
+    margin: 20px auto;
+}
+.satu,.dua,.tiga{
+    padding: 10px 10px;
+    box-sizing: border-box;
 }
 .satu{
     background-color: lightpink;
 }
-.layanan.dua{
+.dua{
     background-color: lightseagreen;
 }
-.layanan.tiga{
+.tiga{
     background-color: limegreen;
+}
+
+
+.container-tiga{
+    max-width: 800px;
+    margin: 20px auto;
+    display: flex;
+    justify-content: space-between;
+}
+.card{
+    /* border: 1px solid gray; */
+    box-shadow: lightsteelblue 4px 5px 10px;
+    border-radius: 15px;
+    overflow: hidden;
+    width: 30%;
+}
+.card .header{
+    height: 100px;
+    background-color: lightpink;
+}
+.card .body{
+    text-align: center;
+    padding: 10px;
+    box-sizing: border-box;
+}
+.container-empat{
+    max-width: 800px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: auto
+}
+.thumbnail{
+    margin: 2px;
+
+}
+.thumbnail:hover{
+    transform: scale(1.12);
+    z-index: 2;
+    animation-delay: 1000ms;
+    background-color: rgba(176, 196, 222, 0.315);
+}
+
+@media (min-width:600px){
+    .container-dua{
+        display: flex;
+        justify-content: space-between;
+
+    }
+    .satu,.dua,.tiga{
+    width: 30%;
+    }
+    
 }

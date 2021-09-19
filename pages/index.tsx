@@ -3,7 +3,7 @@ import Layout from '../components/layout'
 
 export default function Home() {
   return (
-    <Layout>
+    <Layout pageTitle="Home Page">
       <h1>Halaman Utama</h1>
     </Layout>
   )
